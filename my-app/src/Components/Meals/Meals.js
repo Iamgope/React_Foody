@@ -1,5 +1,5 @@
-import AboutMeal from "./AboutMeal"
-import PresentMeals from "./PresentMealList"
+import AboutMeal from "./Summary/AboutMeal"
+import PresentMeals from "./Present/PresentMealList"
 
 const Meals=()=>{
     return<>    <AboutMeal/>

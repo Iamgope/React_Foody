@@ -1,22 +1,19 @@
 
-
+import {useContext,useState} from 'react';
 import Modal from '../UI/Modal';
 import Classes from './Cart.module.css'
-
+import CartContext from '../../store/Cart-context'
 const Cart=(props)=>{
+    //const [hasItem, sethasItem] = useState(false)
+   const context = useContext(CartContext);
+   const totalAmountValue=context.totalAmount.toFixed(2);
+   const hasItem=context.items.length>0;
+   
 
-    const Dummy_Cart=[
-        {
-            id:'001',
-            name:'Biryani',
-            amount:2,
-            price:250,
-        }
-    ]
    const CartItems=(
        <ul className={['cart-items']}>
          {
-             Dummy_Cart.map((item)=>
+             context.items.map((item)=>
                  <li>
                      {item.name}
                  </li>
@@ -25,18 +22,18 @@ const Cart=(props)=>{
        </ul>
    );
 
-   return <Modal>
+   return <Modal onClose={props.hideModal}>
        {CartItems}
        <div className={Classes.total}>
            <span>
                Total Amount
            </span>
            <span>
-               500
+           ₹ {totalAmountValue}
            </span>
        </div>
        <div className={Classes.actions}>
-       <button className={Classes.button}>Order</button>
+       {hasItem &&<button className={Classes.button}>Order</button>}
 
            <button className={Classes['button--alt']} onClick={props.hideModal}>Close</button>
        </div>
