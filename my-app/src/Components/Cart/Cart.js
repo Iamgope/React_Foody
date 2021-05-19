@@ -1,22 +1,26 @@
 
-import {useContext,useState} from 'react';
+import {useContext} from 'react';
 import Modal from '../UI/Modal';
 import Classes from './Cart.module.css'
 import CartContext from '../../store/Cart-context'
+import CartItem from './CartItem';
 const Cart=(props)=>{
     //const [hasItem, sethasItem] = useState(false)
    const context = useContext(CartContext);
    const totalAmountValue=context.totalAmount.toFixed(2);
    const hasItem=context.items.length>0;
+   const onAddHandler=(item)=>{
+     
+   }
+   const onRemoveHandler=(id)=>{
    
+   }
 
    const CartItems=(
-       <ul className={['cart-items']}>
+       <ul className={Classes['cart-items']}>
          {
              context.items.map((item)=>
-                 <li>
-                     {item.name}
-                 </li>
+                <CartItem key={item.id} name={item.name} amount={item.amount} price={item.price} onAdd={onAddHandler} onRemover={onRemoveHandler}/>
              )
          }
        </ul>
@@ -29,7 +33,7 @@ const Cart=(props)=>{
                Total Amount
            </span>
            <span>
-           ₹ {totalAmountValue}
+           ₹{totalAmountValue}
            </span>
        </div>
        <div className={Classes.actions}>
