@@ -26,7 +26,7 @@ const Cart = (props) => {
 
   const submitOrderHandler = async (userData) => {
     setisSub(true);
-    await fetch("https://swapi-e0254-default-rtdb.firebaseio.com/orders.json", {
+    await fetch("Api Key", {
       method: "POST",
       body: JSON.stringify({
         user: userData,

@@ -10,7 +10,7 @@ const PresentMeals = () => {
   useEffect(()=>{
     const fetchMeals=async ()=>{
       setisLoading(true);
-   const response =  await fetch('https://swapi-e0254-default-rtdb.firebaseio.com/Meals.json',{});
+   const response =  await fetch('Api_databse',{});
    if(!response.ok){
      throw new Error('Something Went Wrong!');
    }
