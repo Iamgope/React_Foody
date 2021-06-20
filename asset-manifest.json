@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ReactBlogs/static/css/main.8a457cd1.chunk.css",
+    "main.js": "/ReactBlogs/static/js/main.3464e751.chunk.js",
+    "main.js.map": "/ReactBlogs/static/js/main.3464e751.chunk.js.map",
+    "runtime-main.js": "/ReactBlogs/static/js/runtime-main.a23bead2.js",
+    "runtime-main.js.map": "/ReactBlogs/static/js/runtime-main.a23bead2.js.map",
+    "static/js/2.ed866d75.chunk.js": "/ReactBlogs/static/js/2.ed866d75.chunk.js",
+    "static/js/2.ed866d75.chunk.js.map": "/ReactBlogs/static/js/2.ed866d75.chunk.js.map",
+    "static/js/3.fdf63ce3.chunk.js": "/ReactBlogs/static/js/3.fdf63ce3.chunk.js",
+    "static/js/3.fdf63ce3.chunk.js.map": "/ReactBlogs/static/js/3.fdf63ce3.chunk.js.map",
+    "index.html": "/ReactBlogs/index.html",
+    "static/css/main.8a457cd1.chunk.css.map": "/ReactBlogs/static/css/main.8a457cd1.chunk.css.map",
+    "static/js/2.ed866d75.chunk.js.LICENSE.txt": "/ReactBlogs/static/js/2.ed866d75.chunk.js.LICENSE.txt",
+    "static/media/logo.bb6b146c.png": "/ReactBlogs/static/media/logo.bb6b146c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a23bead2.js",
+    "static/js/2.ed866d75.chunk.js",
+    "static/css/main.8a457cd1.chunk.css",
+    "static/js/main.3464e751.chunk.js"
+  ]
+}
